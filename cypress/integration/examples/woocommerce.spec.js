@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 context('Woocommerce', () => {
-    before( function ()  {
+    beforeEach( function ()  {
         cy.createProduct().then( (response) =>{
             expect(response.status).to.eq(201)
             return response.body
@@ -38,7 +38,7 @@ context('Woocommerce', () => {
         })
     })
 
-    after(function () {
+    afterEach(function () {
         cy.deleteProduct(this.product_created.id).then((response) =>{
             expect(response.status).to.eq(200)
       })
