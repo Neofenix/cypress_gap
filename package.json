@@ -1,0 +1,21 @@
+{
+  "name": "cypress-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "cypress": "^5.0.0"
+  },
+  "scripts": {
+    "cy:open": "./node_modules/.bin/cypress open",
+    "cy:run": "cypress run",
+    "cy:ecommerce-test": "npm run cy:run  -- --spec cypress/integration/examples/woocommerce.spec.js"
+  },
+  "keywords": [
+    "cypress",
+    "tests"
+  ],
+  "author": "Juan Zapata",
+  "license": "ISC"
+}
