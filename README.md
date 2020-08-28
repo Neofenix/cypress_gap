@@ -7,9 +7,9 @@ You must set up those tools:
 1. [git](https://git-scm.com/)
 
 ## Setup
-1. clone the repository: `$ git clone git@github.com:Neofenix/cypress_gap.git`
-2. Open a console into the repository folder
-1. install packages : `$ npm install`
+1. Clone the repository: `$ git clone git@github.com:Neofenix/cypress_gap.git`
+2. Change to repository folder: `$ cd cypress_gap`
+1. Install packages : `$ npm install`
 
 ## Run Tests
 There are two ways to run tests:
